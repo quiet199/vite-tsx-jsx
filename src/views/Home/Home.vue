@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { Hello } from '@/components/Hello'
+import { Fibonacci } from "@/components/Fibonacci"
+import { JsxComp } from "@/components/JsxComp"
 
 let mmsg: string = "Hello"
 
@@ -14,6 +16,8 @@ const click = (): void =>{
         <p>123</p>
     </div>
     <Hello :msg = "mmsg" @click="click"/>
+    <Fibonacci/>
+    <JsxComp/>
 </template>
 
 <style lang="less" scoped>
